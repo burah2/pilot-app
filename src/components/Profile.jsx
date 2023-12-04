@@ -1,5 +1,6 @@
 // src/components/Profile.jsx
 import React, { useState } from 'react';
+import "../Styles.css";
 
 const Profile = () => {
   const [username, setUsername] = useState('');

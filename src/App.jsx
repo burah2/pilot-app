@@ -1,5 +1,5 @@
-// src/App.jsx
 import React, { useState } from 'react';
+import './Styles.css';  // Corrected import path
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AI from './components/AI';
 import Authentication from './components/Authentication';
@@ -12,31 +12,59 @@ import Parking from './components/Parking';
 import Points from './components/Points';
 import Profile from './components/Profile';
 import VoiceAssistant from './components/VoiceAssistant';
-import Weather from './components/Weather'; // Import the new component
+import Weather from './components/Weather';
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  const handleAIAction = () => {
+    console.log('AI action performed');
+  };
+
+  const handleLogin = () => {
+    console.log('User logged in');
+  };
+
+  const handleLogout = () => {
+    console.log('User logged out');
+  };
+
+  const handleDarkModeToggle = () => {
+    // Toggle dark mode state
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
+  const handleSignIn = (googleUser) => {
+    // Your logic for handling successful sign-in
+    console.log('User signed in:', googleUser);
+  };
+
   const handleLanguageChange = (newLanguage) => {
     setSelectedLanguage(newLanguage);
   };
 
-  const handleDarkModeToggle = (newMode) => {
-    setIsDarkMode(newMode);
-  };
 
   return (
     <Router>
       <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
-        {/* Language Selector */}
-        <LanguageSelector onLanguageChange={handleLanguageChange} />
 
-        {/* Dark Mode Switch */}
+        <AI onAIAction={handleAIAction} />
+
+        <Authentication onLogin={handleLogin} onLogout={handleLogout} />
+
         <DarkModeSwitch onDarkModeToggle={handleDarkModeToggle} />
 
-        {/* Notification Center */}
+        <GoogleSignIn onSignIn={handleSignIn} />
+
+        <LanguageSelector onLanguageChange={handleLanguageChange} />
+
+        <Profile />
         <Notification />
+        <Parking />
+        <Points />
+        <VoiceAssistant/>
+        <Weather/>
 
         <Routes>
           <Route path="/ai" element={<AI />} />

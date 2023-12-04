@@ -1,5 +1,7 @@
-// src/components/AI.jsx
+// AI.jsx
+
 import React, { useState, useRef } from 'react';
+import "../Styles.css";
 
 const AI = () => {
   const [userMessage, setUserMessage] = useState('');

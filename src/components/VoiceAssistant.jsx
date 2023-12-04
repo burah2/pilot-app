@@ -1,5 +1,6 @@
 // src/components/VoiceAssistant.jsx
 import React, { useState } from 'react';
+import "../Styles.css";
 
 const VoiceAssistant = () => {
   const [recognition, setRecognition] = useState(null);

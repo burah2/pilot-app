@@ -1,5 +1,6 @@
 // src/components/Points.jsx
 import React, { useState } from 'react';
+import "../Styles.css";
 
 const Points = () => {
   const [earnedPoints, setEarnedPoints] = useState(0);

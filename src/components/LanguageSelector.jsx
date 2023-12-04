@@ -1,5 +1,6 @@
 // src/components/LanguageSelector.jsx
 import React, { useState } from 'react';
+import "../Styles.css";
 
 const LanguageSelector = ({ onLanguageChange }) => {
   const [selectedLanguage, setSelectedLanguage] = useState('en');

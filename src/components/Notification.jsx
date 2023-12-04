@@ -1,5 +1,6 @@
 // src/components/Notification.jsx
 import React, { useState } from 'react';
+import "../Styles.css";
 
 const Notification = () => {
   const [notifications, setNotifications] = useState([]);
@@ -13,7 +14,7 @@ const Notification = () => {
     <div className="notification-center">
       <h2>Notification Center</h2>
       {notifications.length === 0 ? (
-        <p>No notifications</p>
+        <p>Check your Notification</p>
       ) : (
         <ul>
           {notifications.map((notification, index) => (

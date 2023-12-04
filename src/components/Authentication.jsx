@@ -1,5 +1,6 @@
 // src/components/Authentication.jsx
 import React, { useState } from 'react';
+import "../Styles.css";
 
 const Authentication = () => {
   const [username, setUsername] = useState('');

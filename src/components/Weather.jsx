@@ -1,5 +1,6 @@
 // src/components/Weather.jsx
 import React, { useState, useEffect } from 'react';
+import "../Styles.css";
 
 const Weather = () => {
   const [temperature, setTemperature] = useState(null);

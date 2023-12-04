@@ -1,0 +1,292 @@
+/* AI stylings */
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .user, .bot {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .user {
+    background-color: #f0f0f0;
+  }
+  
+  .bot {
+    background-color: #e0e0e0;
+  }
+  
+  .chat-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Authentication.css */
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin: 8px 0;
+  color: #555;
+}
+
+.input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.button {
+  padding: 10px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Styles.css */
+
+/* Light mode styles */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark mode switch styling */
+label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+label input {
+  margin-left: 10px;
+}
+
+/* GoogleSignIn.css */
+
+.google-sign-in-button {
+  background-color: #4285F4; /* Google blue color */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* LanguageSelector.css */
+
+.language-selector-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Notification.css */
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Parking.css */
+.parking-container {
+  margin: 0; /* Set margin to 0 */
+  padding: 0; /* Set padding to 0 */
+  border: none; /* Remove border */
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none; /* Remove border */
+}
+
+
+/* Points.css */
+
+.points-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.points-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+#pointsDisplay {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Profile.css */
+
+.profile-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin: 8px 0;
+  color: #555;
+}
+
+.input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.button {
+  padding: 10px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* voice.css */
+#chat-container {
+  text-align: center;
+  margin: 20px;
+}
+
+#chat {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#transcript {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* weather.css */
+#weather-container {
+  text-align: center;
+  margin: 20px;
+}
+#temperature {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

@@ -1,5 +1,6 @@
 // src/components/DropdownMenu.jsx
 import React from 'react';
+import "../Styles.css";
 
 const DropdownMenu = () => {
   // Define your dropdown items
